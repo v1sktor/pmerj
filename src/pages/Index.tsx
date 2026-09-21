@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Network, ScrollText, Settings, Megaphone, FileText, ChevronRight, ShieldAlert, Siren, LogIn } from "lucide-react";
-import heroBanner from "@/assets/forca-tatica-hero.jpg";
+import heroAsset from "@/assets/novos-pms-hero.jpg.asset.json";
 import { supabase } from "@/integrations/supabase/client";
 import logoUrl from "@/assets/logo-pmerj.png";
 
@@ -90,7 +90,7 @@ const Index = () => {
           </div>
           <div className="relative min-h-[340px] lg:min-h-full overflow-hidden">
             <img
-              src={heroBanner}
+              src={heroAsset.url}
               alt="Efetivo e viaturas da PMERJ em prontidão"
               width={1600}
               height={900}
