@@ -90,7 +90,7 @@ const App = () => (
             <Route
               path="/bopc"
               element={
-                <AccessGate chave="bopc" titulo="BOPC / BIC">
+                <AccessGate chave="bopc" titulo="BOPM / BIC">
                   <BOPC />
                 </AccessGate>
               }

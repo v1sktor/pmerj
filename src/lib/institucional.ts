@@ -9,146 +9,157 @@ export interface UnidadeInstitucional {
 
 export const INSTITUCIONAL: UnidadeInstitucional[] = [
   {
-    sigla: "PCESP",
-    nome: "Polícia Civil do Estado de São Paulo",
-    subtitulo: "Polícia Judiciária · Estado de São Paulo",
+    sigla: "PMERJ",
+    nome: "Polícia Militar do Estado do Rio de Janeiro",
+    subtitulo: "Força Estadual · Vida Carioca",
     missao:
-      "Exercer as funções de polícia judiciária e investigação criminal, promovendo a apuração de infrações penais, a identificação de seus autores e o esclarecimento dos fatos, atuando de forma integrada com os demais órgãos de segurança pública e com respeito à legislação e aos direitos fundamentais.",
+      "Exercer o policiamento ostensivo e preservar a ordem pública no Estado do Rio de Janeiro, atuando com disciplina, hierarquia e respeito aos direitos fundamentais, em benefício da segurança da população carioca.",
     historia:
-      "A Polícia Civil do Estado de São Paulo é responsável pela atividade de polícia judiciária e pela investigação de crimes no território paulista. Sua estrutura é composta por diversos departamentos especializados, unidades territoriais e órgãos de apoio, permitindo o atendimento das mais diversas ocorrências e o desenvolvimento de investigações de diferentes níveis de complexidade.",
+      "A Polícia Militar do Estado do Rio de Janeiro é a força estadual responsável pelo policiamento ostensivo e pela garantia da ordem pública. Sua estrutura é organizada em batalhões e grupamentos especializados, cada um responsável por uma área de atuação específica — do policiamento comunitário às operações táticas de alto risco. Dentro dos próprios batalhões existem ainda estruturas internas como o GAT (Grupamento de Ações Táticas), o PATAMO (Patrulhamento Tático Móvel), a RP (Rádio Patrulha), o PPC (Posto de Policiamento Comunitário) e o PAMESP (Patrulhamento Motorizado Especial), que dão suporte às operações do dia a dia.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais da Polícia Civil do Estado de São Paulo.",
+      "Para informações institucionais, entre em contato pelos canais oficiais da PMERJ.",
   },
   {
-    sigla: "GARRA",
-    nome: "Grupo Armado de Repressão a Roubos e Assaltos",
-    subtitulo: "Grupo Armado de Repressão a Roubos e Assaltos · Polícia Civil",
+    sigla: "RECOM",
+    nome: "Rondas Especiais e Controle de Multidão",
+    subtitulo: "Rondas Especiais e Controle de Multidão · PMERJ",
     missao:
-      "Reprimir roubos, assaltos e sequestros, cumprir ações de alto risco e prestar apoio tático às unidades da Polícia Civil, com técnica, disciplina e respeito aos direitos fundamentais.",
+      "Realizar rondas especiais e atuar no controle de multidões em eventos, manifestações e aglomerações, garantindo a ordem pública com técnica e proporcionalidade no uso da força.",
     historia:
-      "O GARRA — Grupo Armado de Repressão a Roubos e Assaltos — é uma unidade especializada da Polícia Civil voltada à repressão de roubos, assaltos, sequestros e ocorrências de elevada complexidade. Atua também em apoio operacional às demais unidades da instituição.",
+      "O RECOM é a unidade da PMERJ especializada em rondas ostensivas de maior porte e no controle de distúrbios civis, empregada em eventos de grande público, manifestações e situações que exijam contenção organizada de multidões.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do GARRA — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do RECOM — PMERJ.",
   },
   {
-    sigla: "GOE",
-    nome: "Grupo de Operações Especiais",
-    subtitulo: "Grupo de Operações Especiais · Polícia Civil",
+    sigla: "BOPE",
+    nome: "Batalhão de Operações Policiais Especiais",
+    subtitulo: "Batalhão de Operações Policiais Especiais · PMERJ",
     missao:
-      "Atuar em operações táticas de altíssimo risco, situações críticas e resgates que exijam treinamento especializado, planejamento operacional e elevado nível de preparo.",
+      "Atuar em operações policiais de alto risco, incursões táticas, resgate de reféns e incidentes críticos que exijam treinamento especializado e emprego de técnicas avançadas.",
     historia:
-      "O GOE — Grupo de Operações Especiais — é uma unidade especializada da Polícia Civil destinada à atuação em ocorrências de elevada complexidade e risco. Suas equipes são empregadas em operações especiais, resgates e situações que demandem intervenção tática especializada.",
+      "O BOPE é a tropa de elite da PMERJ, reconhecida por sua atuação em operações de altíssima complexidade — incursões em áreas de risco, confrontos armados, resgate de reféns e apoio tático às demais unidades. Seu efetivo passa por um rigoroso processo seletivo e treinamento contínuo.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do GOE — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BOPE — PMERJ.",
   },
   {
-    sigla: "GER",
-    nome: "Grupo Especial de Reação",
-    subtitulo: "Grupo Especial de Reação · Polícia Civil",
+    sigla: "BPChq",
+    nome: "Batalhão de Polícia de Choque",
+    subtitulo: "Batalhão de Polícia de Choque · PMERJ",
     missao:
-      "Atuar na reação imediata a ocorrências de elevado risco, prestando apoio tático às unidades da Polícia Civil em situações que demandem resposta rápida e especializada.",
+      "Controlar distúrbios civis, atuar em situações de grave perturbação da ordem pública e empregar técnicas de choque com disciplina e uso proporcional da força.",
     historia:
-      "O GER — Grupo Especial de Reação — é uma unidade operacional destinada ao emprego em situações críticas, oferecendo resposta imediata e suporte tático às equipes policiais durante ocorrências de maior complexidade.",
+      "O Batalhão de Polícia de Choque é responsável pelo policiamento de choque em grandes eventos, manifestações e ocorrências que demandem contenção organizada. Internamente conta com o GAT (Grupamento de Ações Táticas) e o PATAMO (Patrulhamento Tático Móvel), empregados em ações rápidas de reforço e resposta tática.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do GER — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BPChq — PMERJ.",
   },
   {
-    sigla: "DEIC",
-    nome: "Departamento de Investigações sobre Crime Organizado",
-    subtitulo: "Departamento de Investigações sobre Crime Organizado · Polícia Civil",
+    sigla: "BAC",
+    nome: "Batalhão de Ações com Cães",
+    subtitulo: "Batalhão de Ações com Cães · PMERJ",
     missao:
-      "Investigar e combater organizações criminosas e delitos de elevada complexidade, promovendo ações especializadas de investigação, inteligência e repressão criminal.",
+      "Empregar equipes cinotécnicas no apoio a buscas, detecção de entorpecentes e explosivos, e reforço tático a operações policiais em conjunto com outras unidades.",
     historia:
-      "O DEIC — Departamento de Investigações sobre Crime Organizado — concentra atividades especializadas de investigação e combate ao crime organizado, atuando na identificação de organizações criminosas, seus integrantes e estruturas de atuação.",
+      "O BAC reúne os cães e condutores da PMERJ, treinados para atuação em faro seletivo, busca de pessoas desaparecidas, detecção de substâncias ilícitas e apoio a operações de choque e revista, ampliando a capacidade operacional das demais unidades.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do DEIC — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BAC — PMERJ.",
   },
   {
-    sigla: "SAT",
-    nome: "Serviço Aerotático Policial",
-    subtitulo: "Serviço Aerotático Policial · Polícia Civil",
+    sigla: "GAM",
+    nome: "Grupamento Aeromóvel",
+    subtitulo: "Grupamento Aeromóvel · PMERJ",
     missao:
-      "Prestar apoio aéreo às operações da Polícia Civil, realizando patrulhamento, transporte tático, acompanhamento de ocorrências e suporte às unidades em operações de maior complexidade.",
+      "Prestar apoio aéreo às operações policiais, realizando patrulhamento, transporte tático, monitoramento e resgate aeromédico em situações de emergência.",
     historia:
-      "O SAT — Serviço Aerotático Policial — é responsável pelo emprego de recursos aéreos em apoio às atividades operacionais da Polícia Civil, ampliando a capacidade de resposta e mobilidade das equipes policiais.",
+      "O Grupamento Aeromóvel opera as aeronaves da PMERJ, dando suporte a operações terrestres, buscas, monitoramento de grandes eventos e transporte tático de equipes especializadas, ampliando o alcance e a velocidade de resposta da corporação.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do SAT — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do GAM — PMERJ.",
   },
   {
-    sigla: "DHPP",
-    nome: "Departamento de Homicídios e Proteção à Pessoa",
-    subtitulo: "Departamento de Homicídios e Proteção à Pessoa · Polícia Civil",
+    sigla: "BPRv",
+    nome: "Batalhão de Polícia Rodoviária",
+    subtitulo: "Batalhão de Polícia Rodoviária · PMERJ",
     missao:
-      "Investigar homicídios, desaparecimentos e crimes relacionados à proteção da pessoa, buscando esclarecer os fatos, identificar seus responsáveis e garantir a adequada apuração das ocorrências.",
+      "Realizar o policiamento ostensivo das rodovias estaduais, prevenindo acidentes, fiscalizando o trânsito e reprimindo ilícitos praticados nas vias.",
     historia:
-      "O DHPP — Departamento de Homicídios e Proteção à Pessoa — é especializado na investigação de crimes contra a vida e ocorrências envolvendo pessoas desaparecidas ou em situação de risco, utilizando técnicas investigativas e análise de evidências.",
+      "O BPRv é responsável pelo patrulhamento das principais rodovias do Estado, atuando na fiscalização de trânsito, atendimento a acidentes e combate a crimes praticados nas estradas, em rondas de radiopatrulha (RP) distribuídas por toda a malha rodoviária.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do DHPP — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BPRv — PMERJ.",
   },
   {
-    sigla: "DENARC",
-    nome: "Departamento de Investigações sobre Narcóticos",
-    subtitulo: "Departamento de Investigações sobre Narcóticos · Polícia Civil",
+    sigla: "BPTur",
+    nome: "Batalhão de Policiamento em Áreas Turísticas",
+    subtitulo: "Batalhão de Policiamento em Áreas Turísticas · PMERJ",
     missao:
-      "Investigar e combater o tráfico de drogas e demais crimes relacionados a entorpecentes, atuando na identificação de envolvidos, pontos de distribuição e organizações criminosas.",
+      "Garantir a segurança de turistas e moradores nas principais áreas turísticas do Estado, promovendo policiamento ostensivo e comunitário orientado ao público visitante.",
     historia:
-      "O DENARC — Departamento de Investigações sobre Narcóticos — é especializado na repressão ao tráfico de drogas e na investigação de crimes relacionados à produção, armazenamento, distribuição e comercialização de entorpecentes.",
+      "O BPTur atua nas regiões de maior fluxo turístico, mantendo postos de policiamento comunitário (PPC) e rondas constantes em praias, pontos turísticos e áreas de grande circulação, reforçando a sensação de segurança de moradores e visitantes.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do DENARC — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BPTur — PMERJ.",
   },
   {
-    sigla: "DECAP",
-    nome: "Departamento de Polícia Judiciária da Capital",
-    subtitulo: "Departamento de Polícia Judiciária da Capital · Polícia Civil",
+    sigla: "BEPE",
+    nome: "Batalhão Especializado de Policiamento em Estádios",
+    subtitulo: "Batalhão Especializado de Policiamento em Estádios · PMERJ",
     missao:
-      "Coordenar e supervisionar as atividades das unidades de polícia judiciária da Capital, garantindo o funcionamento das delegacias e a adequada prestação dos serviços policiais à população.",
+      "Planejar e executar o policiamento especializado em estádios e grandes eventos esportivos, prevenindo distúrbios e garantindo a segurança do público presente.",
     historia:
-      "O DECAP — Departamento de Polícia Judiciária da Capital — é responsável pela coordenação das delegacias e unidades policiais situadas na Capital, promovendo a integração das atividades de atendimento, registro e investigação criminal.",
+      "O BEPE é responsável pela segurança em estádios e arenas esportivas, atuando antes, durante e após os eventos em coordenação com as demais unidades da PMERJ para prevenir conflitos entre torcidas e garantir a ordem nos jogos.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do DECAP — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BEPE — PMERJ.",
   },
   {
-    sigla: "CORREGEPOL",
-    nome: "Corregedoria Geral da Polícia Civil",
-    subtitulo: "Corregedoria Geral da Polícia Civil · Polícia Civil",
+    sigla: "BPTran",
+    nome: "Batalhão de Polícia de Trânsito",
+    subtitulo: "Batalhão de Polícia de Trânsito · PMERJ",
     missao:
-      "Fiscalizar a conduta funcional dos integrantes da Polícia Civil, apurar irregularidades e garantir o cumprimento das normas disciplinares e administrativas da instituição.",
+      "Fiscalizar e ordenar o trânsito nas vias urbanas, prevenindo acidentes e prestando apoio operacional em ocorrências de trânsito.",
     historia:
-      "A CORREGEPOL — Corregedoria Geral da Polícia Civil — atua na fiscalização interna da instituição, recebendo denúncias, realizando apurações e conduzindo procedimentos relacionados a possíveis infrações funcionais e disciplinares.",
+      "O BPTran atua na fiscalização e organização do tráfego nas principais vias urbanas do Estado, realizando operações de trânsito, escoltas e apoio em situações de grande fluxo de veículos, sempre em articulação com os órgãos municipais de trânsito.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais da CORREGEPOL — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BPTran — PMERJ.",
   },
   {
-    sigla: "CERCO",
-    nome: "Serviço de Cerco e Bloqueio",
-    subtitulo: "Serviço de Cerco e Bloqueio · Polícia Civil",
+    sigla: "GPFer",
+    nome: "Grupamento de Polícia Ferroviária",
+    subtitulo: "Grupamento de Polícia Ferroviária · PMERJ",
     missao:
-      "Realizar ações de cerco, bloqueio e contenção, proporcionando apoio às equipes policiais na localização, acompanhamento e interceptação de indivíduos ou veículos envolvidos em ocorrências.",
+      "Garantir a segurança nas estações e composições ferroviárias, prevenindo furtos, roubos e demais ilícitos praticados no transporte sobre trilhos.",
     historia:
-      "O CERCO — Serviço de Cerco e Bloqueio — é destinado ao apoio operacional em ocorrências que demandem contenção de áreas, bloqueio de vias e estabelecimento de perímetros para auxiliar na localização e interceptação de suspeitos.",
+      "O GPFer realiza o policiamento ostensivo nas linhas férreas e estações, protegendo passageiros e patrimônio do sistema ferroviário, em rondas constantes e ações de prevenção nos horários de maior movimento.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do CERCO — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do GPFer — PMERJ.",
   },
   {
-    sigla: "IML",
-    nome: "Instituto Médico Legal",
-    subtitulo: "Instituto Médico Legal · Polícia Civil",
+    sigla: "BPMMus",
+    nome: "Banda de Música",
+    subtitulo: "Banda de Música · PMERJ",
     missao:
-      "Realizar exames médico-legais e procedimentos necroscópicos, fornecendo elementos técnicos para auxiliar na identificação de vítimas e no esclarecimento de ocorrências de interesse policial.",
+      "Representar a PMERJ em solenidades, cerimônias cívico-militares e eventos institucionais, promovendo a cultura musical e a imagem da corporação junto à sociedade.",
     historia:
-      "O IML — Instituto Médico Legal — é responsável pela realização de exames médico-legais, necropsias e demais procedimentos técnicos relacionados à medicina legal, contribuindo para as investigações conduzidas pela Polícia Civil.",
+      "A Banda de Música da PMERJ participa de formaturas, desfiles cívicos e cerimônias oficiais, sendo uma das expressões mais tradicionais da corporação em sua aproximação com a comunidade.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais do IML — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais da BPMMus — PMERJ.",
   },
   {
-    sigla: "DGP",
-    nome: "Delegacia Geral de Polícia",
-    subtitulo: "Delegacia Geral de Polícia · Polícia Civil",
+    sigla: "BPAmb",
+    nome: "Batalhão de Polícia Ambiental",
+    subtitulo: "Batalhão de Polícia Ambiental · PMERJ",
     missao:
-      "Exercer a direção geral da Polícia Civil, coordenando suas unidades, departamentos e atividades administrativas e operacionais, garantindo o funcionamento integrado da instituição.",
+      "Fiscalizar e proteger o meio ambiente, reprimindo crimes ambientais, caça e pesca ilegais, desmatamento e demais infrações contra a fauna e a flora do Estado.",
     historia:
-      "A DGP — Delegacia Geral de Polícia — constitui a estrutura de direção superior da Polícia Civil, responsável pela coordenação geral da instituição, definição de diretrizes e supervisão de seus departamentos e unidades.",
+      "O BPAmb atua na fiscalização de áreas de preservação, unidades de conservação e regiões de mata, combatendo crimes ambientais e apoiando ações de defesa civil em situações de desastre natural.",
     contato:
-      "Para informações institucionais, entre em contato pelos canais oficiais da DGP — Polícia Civil.",
+      "Para informações institucionais, entre em contato pelos canais oficiais do BPAmb — PMERJ.",
+  },
+  {
+    sigla: "BTM",
+    nome: "Batalhão de Transportes e Motociclistas",
+    subtitulo: "Batalhão de Transportes e Motociclistas · PMERJ",
+    missao:
+      "Realizar o policiamento motorizado em motocicletas e apoiar o transporte tático de tropas, viaturas e equipamentos entre as unidades da corporação.",
+    historia:
+      "O BTM reúne as equipes de patrulhamento motorizado especial (PAMESP) e é responsável pela logística de transporte da corporação, além de rondas rápidas em motocicleta nos grandes centros urbanos, onde a agilidade é decisiva no atendimento a ocorrências.",
+    contato:
+      "Para informações institucionais, entre em contato pelos canais oficiais do BTM — PMERJ.",
   },
 ];

@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Network, ScrollText, Settings, Megaphone, FileText, ChevronRight, ShieldAlert, Siren, LogIn } from "lucide-react";
 import heroBanner from "@/assets/forca-tatica-hero.jpg";
 import { supabase } from "@/integrations/supabase/client";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+import logoUrl from "@/assets/logo-pmerj.png";
 
 const Index = () => {
   const now = new Date();
@@ -29,17 +28,17 @@ const Index = () => {
           <Link to="/" className="flex items-center gap-3">
             <img
               src={logoUrl}
-              alt="Emblema da Força Tática"
+              alt="Emblema da PMERJ"
               width={1024}
               height={1024}
               className="h-14 w-14 object-contain"
             />
             <span className="flex flex-col leading-tight">
               <span className="font-display text-lg uppercase">
-                Força Tática
+                PMERJ
               </span>
               <span className="text-[11px] uppercase text-sidebar-foreground/65">
-                Polícia Militar do Estado de São Paulo
+                Polícia Militar do Estado do Rio de Janeiro
               </span>
             </span>
           </Link>
@@ -67,10 +66,10 @@ const Index = () => {
               <span className="font-semibold text-xs uppercase">Patrulhamento tático</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase leading-tight text-sidebar-foreground">
-              Força Tática
+              PMERJ
             </h1>
             <p className="mt-3 font-display text-lg uppercase text-sidebar-foreground/75">
-              Polícia Militar do Estado de São Paulo
+              Polícia Militar do Estado do Rio de Janeiro
             </p>
             <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-sidebar-foreground/65">
               Portal operacional para registros, comunicações institucionais e serviços de apoio ao efetivo.
@@ -78,21 +77,21 @@ const Index = () => {
             <div className="mt-8 grid w-full max-w-lg grid-cols-1 gap-3 sm:grid-cols-2">
               <Button asChild size="lg" className="w-full font-semibold uppercase">
                 <Link to="/bopc">
-                  BOPC/BIC <ChevronRight className="ml-1 h-4 w-4" />
+                  BOPM/BIC <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full font-semibold uppercase border-sidebar-border bg-sidebar-accent text-sidebar-accent-foreground hover:bg-secondary hover:text-secondary-foreground">
                 <Link to="/rso/novo">Relatório de Diligências</Link>
               </Button>
               <Button asChild size="lg" variant="ghost" className="w-full font-semibold uppercase text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground sm:col-span-2">
-                <Link to="/edital">Edital Força Tática</Link>
+                <Link to="/edital">Edital PMERJ</Link>
               </Button>
             </div>
           </div>
           <div className="relative min-h-[340px] lg:min-h-full overflow-hidden">
             <img
               src={heroBanner}
-              alt="Equipe e viaturas da Força Tática em prontidão"
+              alt="Efetivo e viaturas da PMERJ em prontidão"
               width={1600}
               height={900}
               className="absolute inset-0 h-full w-full object-cover"
@@ -205,8 +204,11 @@ const Index = () => {
       {/* Rodapé */}
       <footer className="bg-sidebar text-sidebar-foreground mt-auto border-t-2 border-primary">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px]">
-          <span>© Força Tática PMESP — {now.getFullYear()}</span>
+          <span>© PMERJ — {now.getFullYear()}</span>
           <span className="text-sidebar-foreground/65">Portal operacional · Acesso restrito</span>
+        </div>
+        <div className="max-w-6xl mx-auto px-6 pb-5 text-center text-[11px] text-sidebar-foreground/45">
+          Portal fictício de roleplay para o servidor FiveM Vida Carioca. Sem vínculo com a Polícia Militar do Estado do Rio de Janeiro real.
         </div>
       </footer>
     </div>

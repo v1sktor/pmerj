@@ -6,57 +6,57 @@
 
 @layer base {
   :root {
-    /* Força Tática PMESP — preto, grafite, vermelho institucional */
-    --background: 0 0% 96%;
-    --foreground: 0 0% 7%;
+    /* PMERJ — laranja, cinza e azul institucional (cores do brasão) */
+    --background: 220 9% 96%;
+    --foreground: 220 15% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 7%;
+    --card-foreground: 220 15% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 7%;
+    --popover-foreground: 220 15% 8%;
 
-    --primary: 352 73% 37%;
+    --primary: 24 90% 52%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 352 72% 47%;
+    --primary-glow: 24 95% 62%;
 
-    --secondary: 0 0% 91%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 220 9% 91%;
+    --secondary-foreground: 220 15% 12%;
 
-    --muted: 0 0% 91%;
-    --muted-foreground: 0 0% 38%;
+    --muted: 220 9% 91%;
+    --muted-foreground: 220 8% 40%;
 
-    --accent: 0 0% 17%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 231 48% 22%;
+    --accent-foreground: 0 0% 97%;
 
     --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 82%;
-    --input: 0 0% 88%;
-    --ring: 352 73% 37%;
+    --border: 220 9% 82%;
+    --input: 220 9% 88%;
+    --ring: 24 90% 52%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 0 0% 91%;
-    --sidebar-primary: 352 73% 45%;
+    --sidebar-background: 225 35% 9%;
+    --sidebar-foreground: 220 12% 92%;
+    --sidebar-primary: 24 90% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 17%;
+    --sidebar-accent: 225 30% 17%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 23%;
-    --sidebar-ring: 352 73% 45%;
+    --sidebar-border: 225 25% 24%;
+    --sidebar-ring: 24 90% 55%;
 
     --success: 142 45% 38%;
     --warning: 38 80% 45%;
     --danger: 0 65% 48%;
 
-    --gradient-tactical: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(0 0% 89%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(352 73% 37%) 0%, hsl(352 72% 47%) 100%);
-    --gradient-blue: linear-gradient(135deg, hsl(0 0% 17%) 0%, hsl(0 0% 7%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 96%) 0%, hsl(0 0% 90%) 100%);
+    --gradient-tactical: linear-gradient(135deg, hsl(220 9% 96%) 0%, hsl(220 9% 89%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(24 90% 52%) 0%, hsl(24 95% 62%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(231 42% 20%) 0%, hsl(225 45% 9%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 9% 96%) 0%, hsl(220 9% 90%) 100%);
 
-    --shadow-gold: 0 8px 28px -12px hsl(352 73% 37% / 0.3);
+    --shadow-gold: 0 8px 28px -12px hsl(24 90% 52% / 0.35);
     --shadow-tactical: 0 10px 30px -14px hsl(0 0% 0% / 0.28);
     --shadow-elevated: 0 20px 50px -24px hsl(0 0% 0% / 0.48);
 

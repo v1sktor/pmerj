@@ -61,7 +61,7 @@ export function AppSidebar() {
             {!collapsed && (
               <span className="flex items-center gap-2">
                 <Shield className="h-4 w-4" />
-                {"\n"}
+                OPERACIONAL
               </span>
             )}
             {collapsed && <Shield className="h-4 w-4 text-primary" />}

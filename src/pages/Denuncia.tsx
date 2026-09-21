@@ -112,10 +112,10 @@ const Denuncia = () => {
           </span>
           <div>
             <h1 className="font-display text-2xl font-bold text-primary">
-              Faça uma denúncia — Corregedoria da Polícia Civil
+              Faça uma denúncia — Corregedoria da PMERJ
             </h1>
             <p className="mt-2 text-[14px] leading-relaxed text-muted-foreground">
-              Canal direto com a CORREGEPOL para comunicar desvios de conduta, abuso de autoridade
+              Canal direto com a Corregedoria para comunicar desvios de conduta, abuso de autoridade
               ou irregularidades praticadas por servidores. A denúncia pode ser anônima e será
               apurada com sigilo.
             </p>
@@ -189,7 +189,7 @@ const Denuncia = () => {
                 <Input
                   id="unidade"
                   maxLength={120}
-                  placeholder="Ex: DOPE / GARRA"
+                  placeholder="Ex: BPChq / BOPE"
                   value={form.unidade_envolvida}
                   onChange={(e) => set("unidade_envolvida", e.target.value)}
                 />

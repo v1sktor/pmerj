@@ -8,21 +8,21 @@ export interface ProvaQuestao {
 export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   {
     n: 1,
-    enunciado: "Qual é a principal função da Polícia Civil?",
+    enunciado: "Qual é a principal função da PMERJ?",
     opcoes: [
-      "Fazer patrulhamento ostensivo",
+      "Fazer patrulhamento ostensivo e preventivo",
       "Investigar crimes e conduzir inquéritos",
-      "Aplicar multas de trânsito",
+      "Aplicar multas de trânsito exclusivamente",
       "Controlar hospitais",
     ],
-    correta: 1,
+    correta: 0,
   },
   {
     n: 2,
-    enunciado: "O que um Delegado deve fazer ao chegar em uma cena de homicídio?",
+    enunciado: "O que um policial militar deve fazer ao chegar em uma cena de crime?",
     opcoes: [
       "Liberar imediatamente o local",
-      "Isolar a área e iniciar os procedimentos investigativos",
+      "Isolar a área e preservar o local até a chegada da perícia",
       "Retirar o corpo sozinho",
       "Ignorar testemunhas",
     ],
@@ -30,7 +30,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 3,
-    enunciado: "Em quais situações a Polícia Civil pode solicitar mandado de busca e apreensão?",
+    enunciado: "Em quais situações a polícia pode solicitar mandado de busca e apreensão?",
     opcoes: [
       "Em qualquer abordagem de rotina",
       "Apenas em acidentes de trânsito",
@@ -74,7 +74,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 7,
-    enunciado: "Como um Investigador deve agir ao coletar provas?",
+    enunciado: "Como um policial militar deve agir ao preservar uma cena de crime?",
     opcoes: [
       "Mexendo em tudo rapidamente",
       "Preservando o local e registrando as evidências",
@@ -112,7 +112,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
       "Qualquer pessoa pode manipular as provas",
       "As provas devem ser preservadas e registradas corretamente",
       "As provas podem ser destruídas após apreensão",
-      "Apenas Delegados podem tocar nas provas",
+      "Apenas peritos podem tocar nas provas",
     ],
     correta: 1,
   },
@@ -129,10 +129,10 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 12,
-    enunciado: "O que é necessário para iniciar um inquérito policial?",
+    enunciado: "O que é necessário para lavrar um BOPM (Boletim de Ocorrência Policial Militar)?",
     opcoes: [
       "Apenas vontade do policial",
-      "Indícios de autoria e materialidade do crime",
+      "Fatos e dados verificáveis sobre a ocorrência",
       "Ordem de um civil",
       "Aprovação de facção criminosa",
     ],
@@ -154,10 +154,10 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 14,
-    enunciado: "Quais são os principais departamentos especializados da Polícia Civil?",
+    enunciado: "Quais são batalhões especializados da PMERJ?",
     opcoes: [
       "Corpo de Bombeiros e SAMU",
-      "DEIC, DECAP E DOPE",
+      "BOPE, BPChq e RECOM",
       "CET e DETRAN",
       "Guarda Municipal e Exército",
     ],
@@ -165,7 +165,7 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 15,
-    enunciado: "Qual deve ser a postura de um Escrivão durante depoimentos?",
+    enunciado: "Qual deve ser a postura de um policial militar ao colher relatos de testemunhas?",
     opcoes: [
       "Alterar informações",
       "Registrar tudo de forma imparcial e correta",
@@ -220,7 +220,7 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 20,
-    enunciado: "Como investigadores podem infiltrar-se em organizações criminosas?",
+    enunciado: "Como uma equipe policial pode atuar de forma velada em uma investigação de apoio?",
     opcoes: [
       "Revelando identidade policial",
       "Atuando de forma sigilosa e estratégica",
@@ -259,7 +259,7 @@ export const QUESTOES_DISSERTATIVAS = [
   {
     n: 23,
     enunciado:
-      "Descreva ao seu ver, o motivo pelo o qual você faria diferença na Polícia Civil:",
+      "Descreva ao seu ver, o motivo pelo o qual você faria diferença na PMERJ:",
   },
   {
     n: 24,

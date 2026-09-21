@@ -9,8 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { MULTAS_CTB, SEV_META, type Severity } from "@/lib/ctb-multas";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+import logoUrl from "@/assets/logo-pmerj.png";
 
 type Membro = { nome: string; rg: string };
 const membroVazio: Membro = { nome: "", rg: "" };
@@ -61,8 +60,8 @@ export default function BOPC() {
   const boletim = useMemo(
     () =>
       [
-        `# BOPC Nº ${val(numero)}`,
-        `BOLETIM DE OCORRÊNCIA — FORÇA TÁTICA PMESP`,
+        `# BOPM Nº ${val(numero)}`,
+        `BOLETIM DE OCORRÊNCIA — PMERJ`,
         ``,
         `DATA: ${dataBR}  HORA: ${hora || D}`,
         `PREFIXO: ${val(prefixo)}`,
@@ -138,12 +137,12 @@ export default function BOPC() {
       <header className="bg-sidebar text-sidebar-foreground border-b-2 border-primary">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoUrl} alt="Emblema da Força Tática" width={1024} height={1024} className="h-11 w-11 object-contain" />
+            <img src={logoUrl} alt="Emblema da PMERJ" width={1024} height={1024} className="h-11 w-11 object-contain" />
             <span className="flex flex-col leading-tight">
               <span className="font-display text-base font-semibold tracking-wide">
-                Força Tática · PMESP
+                PMERJ
               </span>
-              <span className="text-[11px] text-sidebar-foreground/65">Polícia Militar do Estado de São Paulo</span>
+              <span className="text-[11px] text-sidebar-foreground/65">Polícia Militar do Estado do Rio de Janeiro</span>
             </span>
           </Link>
           <Button variant="ghost" size="sm" asChild className="text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
@@ -170,7 +169,7 @@ export default function BOPC() {
             </CardHeader>
             <CardContent className="grid gap-4 sm:grid-cols-3">
               <div className="space-y-1.5">
-                <Label className="text-[11px] uppercase tracking-wider text-muted-foreground">Nº BOPC</Label>
+                <Label className="text-[11px] uppercase tracking-wider text-muted-foreground">Nº BOPM</Label>
                 <Input value={numero} onChange={(e) => setNumero(e.target.value)} />
               </div>
               <div className="space-y-1.5">

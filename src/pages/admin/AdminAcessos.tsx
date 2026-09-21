@@ -12,26 +12,20 @@ import CorregedoriaContas from "@/components/admin/CorregedoriaContas";
 type Codigo = { id: string; chave: string; codigo: string; updated_at: string };
 
 const LABELS: Record<string, string> = {
-  bopc: "BOPC / BIC",
+  bopc: "BOPM / BIC",
   diligencias: "Relatório de Diligências",
   juridico: "Jurídico",
   corregedoria: "Corregedoria",
 };
 
-const ALFABETO = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-
 function gerarCodigo() {
-  let parte1 = "";
-  let parte2 = "";
-  for (let i = 0; i < 4; i++) parte1 += ALFABETO[Math.floor(Math.random() * ALFABETO.length)];
-  for (let i = 0; i < 4; i++) parte2 += ALFABETO[Math.floor(Math.random() * ALFABETO.length)];
-  return `${parte1}-${parte2}`;
+  const numeros = String(Math.floor(Math.random() * 10000)).padStart(4, "0");
+  return `PMERJ-${numeros}`;
 }
 
 function formatarCodigo(valor: string) {
-  const limpo = valor.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 8);
-  if (limpo.length <= 4) return limpo;
-  return `${limpo.slice(0, 4)}-${limpo.slice(4)}`;
+  const digitos = valor.replace(/[^0-9]/g, "").slice(0, 4);
+  return digitos ? `PMERJ-${digitos}` : "";
 }
 
 export default function AdminAcessos() {

@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+import logoUrl from "@/assets/logo-pmerj.png";
 
 const storageKey = (chave: string) => `access-code:${chave}`;
 
@@ -89,7 +88,7 @@ export function AccessGate({
     <div className="min-h-screen bg-background flex items-center justify-center px-6 py-12">
       <Card className="w-full max-w-md">
         <CardHeader className="items-center text-center space-y-3">
-          <img src={logoUrl} alt="Emblema da Força Tática" width={1024} height={1024} className="h-16 w-16 object-contain" />
+          <img src={logoUrl} alt="Emblema da PMERJ" width={1024} height={1024} className="h-16 w-16 object-contain" />
           <CardTitle className="text-lg">{titulo}</CardTitle>
           <p className="text-sm text-muted-foreground">
             Área restrita. Informe o código de acesso semanal fornecido pelo comando.
@@ -101,14 +100,11 @@ export function AccessGate({
               <Label className="text-[11px] uppercase tracking-wider text-muted-foreground">Código de acesso</Label>
               <Input
                 autoFocus
-                placeholder="XXXX-XXXX"
+                placeholder="PMERJ-0000"
                 value={codigo}
                 onChange={(e) => {
-                  const v = e.target.value.toUpperCase().replace(/[^A-Z0-9-]/g, "");
-                  const limpo = v.replace(/-/g, "").slice(0, 8);
-                  const formatado =
-                    limpo.length <= 4 ? limpo : `${limpo.slice(0, 4)}-${limpo.slice(4)}`;
-                  setCodigo(formatado);
+                  const digitos = e.target.value.replace(/[^0-9]/g, "").slice(0, 4);
+                  setCodigo(digitos ? `PMERJ-${digitos}` : "");
                 }}
                 className="font-mono tracking-widest"
               />
