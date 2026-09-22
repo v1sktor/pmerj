@@ -71,6 +71,10 @@ const Index = () => {
             <p className="mt-3 font-display text-lg uppercase text-sidebar-foreground/75">
               Polícia Militar do Estado do Rio de Janeiro
             </p>
+            <p className="mt-1 font-display text-base uppercase text-sidebar-foreground/60">
+              16º Batalhão de Polícia do Estado do Rio de Janeiro
+            </p>
+
             <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-sidebar-foreground/65">
               Portal operacional para registros, comunicações institucionais e serviços de apoio ao efetivo.
             </p>
