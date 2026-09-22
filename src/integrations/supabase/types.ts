@@ -1099,6 +1099,19 @@ export type Database = {
           superior_id: string
         }[]
       }
+      get_rso_horas: {
+        Args: never
+        Returns: {
+          encarregado_id: string
+          homem3_id: string
+          homem4_id: string
+          homem5_id: string
+          motorista_id: string
+          patrulha_fim: string
+          patrulha_inicio: string
+          responsavel_id: string
+        }[]
+      }
       get_rso_indicadores: { Args: never; Returns: Json }
       has_permission_or_admin: {
         Args: { _permission: string; _user_id: string }
