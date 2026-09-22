@@ -13,8 +13,8 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const { count: hc } = await supabase.from("hierarquia").select("*", { count: "exact", head: true });
-      setHierCount(hc ?? 0);
+      const { data: hierPub } = await (supabase.rpc as any)("get_hierarquia_publica");
+      setHierCount((hierPub ?? []).length);
 
       const { data: rsos, count: rc } = await supabase.from("rsos").select("*", { count: "exact" }).order("created_at", { ascending: false });
       setTotalRsos(rc ?? 0);

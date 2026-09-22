@@ -34,16 +34,19 @@ const Timings = () => {
   useEffect(() => {
     const load = async () => {
       setLoading(true);
-      const [{ data: hierarquia }, { data: rsos }] = await Promise.all([
-        supabase
-          .from("hierarquia")
-          .select("id, membro_nome, ordem, batalhao, cargos(nome, nivel_hierarquico)")
-          .order("ordem"),
-        supabase
-          .from("rsos")
-          .select("responsavel_id, encarregado_id, motorista_id, homem3_id, homem4_id, homem5_id, patrulha_inicio, patrulha_fim, status")
-          .eq("status", "aprovado"),
+      const [{ data: hierPub }, { data: rsos }] = await Promise.all([
+        (supabase.rpc as any)("get_hierarquia_publica"),
+        (supabase.rpc as any)("get_rso_horas"),
       ]);
+      const hierarquia = (hierPub ?? [])
+        .map((h: any) => ({
+          id: h.id,
+          membro_nome: h.membro_nome,
+          ordem: h.ordem,
+          batalhao: h.batalhao,
+          cargos: { nome: h.cargo_nome, nivel_hierarquico: h.cargo_nivel },
+        }))
+        .sort((a: any, b: any) => (a.ordem ?? 0) - (b.ordem ?? 0));
 
       if (!hierarquia) {
         setStats([]);
