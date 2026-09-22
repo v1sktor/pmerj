@@ -69,7 +69,7 @@ const Hierarquia = ({
 
   const fetchData = async () => {
     let { data: hierData } = await supabase.from("hierarquia").select("*, cargos(nome, imagem_url, nivel_hierarquico)");
-    if (!hierData) {
+    if (!hierData || hierData.length === 0) {
       const { data: pub } = await (supabase.rpc as any)("get_hierarquia_publica");
       hierData = (pub ?? []).map((h: any) => ({
         ...h,
