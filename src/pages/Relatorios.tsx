@@ -83,7 +83,11 @@ const Relatorios = () => {
   };
 
   const fetchMembros = async () => {
-    const { data } = await supabase.from("hierarquia").select("id, membro_nome, cargos(nome)");
+    let { data } = await supabase.from("hierarquia").select("id, membro_nome, cargos(nome)");
+    if (!data || data.length === 0) {
+      const { data: pub } = await (supabase.rpc as any)("get_hierarquia_publica");
+      data = (pub ?? []).map((h: any) => ({ id: h.id, membro_nome: h.membro_nome, cargos: { nome: h.cargo_nome } })) as any;
+    }
     if (data) {
       const map: Record<string, string> = {};
       data.forEach((m: any) => { map[m.id] = `${m.membro_nome}${m.cargos?.nome ? ` (${m.cargos.nome})` : ""}`; });
