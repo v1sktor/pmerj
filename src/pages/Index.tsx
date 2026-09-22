@@ -40,6 +40,10 @@ const Index = () => {
               <span className="text-[11px] uppercase text-sidebar-foreground/65">
                 Polícia Militar do Estado do Rio de Janeiro
               </span>
+              <span className="text-[10px] uppercase text-sidebar-foreground/50">
+                16º Batalhão de Polícia do Estado do Rio de Janeiro
+              </span>
+
             </span>
           </Link>
 
